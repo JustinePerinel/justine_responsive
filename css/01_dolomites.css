@@ -1,0 +1,76 @@
+body {
+    background-color: lightseagreen;
+    font-family: 'Inter', sans-serif;
+}
+.conteneur {
+    margin: 0 auto;
+    width: 1000px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.gris {
+    background-color: rgb(228, 225, 225);
+    text-align: center;
+}
+main {
+    flex: 1;
+}
+footer {
+    flex-shrink: 0;
+}
+/* La grille sur 12 colonnes  */
+/* Définition de la largeur des colonnes en % */
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.col-1 {
+    /* cette valeur est la largeur en % d'une colonne. Si je veux la largeur de 2 colonnes je fais la largeur d'une colonne * 2 */
+    width: 8.333333%;
+}
+.col-2 {
+    width: 16.666666%;
+}
+.col-3 {
+    width: 25%;
+}
+.col-4 {
+    width: 33.333333%;
+}
+.col-5 {
+    width: 41.666666%;
+}
+.col-6 {
+    width: 50%;
+}
+.col-7 {
+    width: 58.333333%; 
+}
+.col-8 {
+    width: 66.666666%; 
+}
+.col-9 {
+    width: 75%;  
+}
+.col-10 {
+    width: 83.333333%;  
+}
+.col-11 {
+    width: 91.666666%;   
+}
+.col-12 {
+    width: 100%;   
+}
+/* les marges à gauche pour créer si on veut des colonnes vides */
+.marge-1 {
+    margin-left: 8.333333%;
+}
+.marge-2 {
+    margin-left: 16.666666%;
+}
+.marge-3 {
+    margin-left: 25%;
+}
