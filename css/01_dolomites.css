@@ -1,19 +1,42 @@
+/* Mes styles pour la page dolomites ksemedo  */
 body {
-    background-color: lightseagreen;
-    font-family: 'Inter', sans-serif;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
 }
-.conteneur {
-    margin: 0 auto;
-    width: 1000px;
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
+/* classes couleurs et textes centrés  */
 .gris {
     background-color: rgb(228, 225, 225);
     text-align: center;
 }
+.gold {
+    background-color: gold;
+    text-align: center;
+}
+.lightblue {
+    background-color: lightblue;
+    color: white;
+    text-align: center;
+}
+/* Le conteneur principal  */
+.conteneur {
+    margin: 0 auto;
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+/* pour la navigation du haut  */
+nav {
+    height: 80px;
+    margin-bottom: 10px;
+    line-height: 80px;
+}
+/* le menu est flex pour séparer les enfants de manière égales  */
+#menu {
+    display: flex;
+    justify-content: space-evenly;
+}
+/* main et flex pour mettre le footer en bas  */
 main {
     flex: 1;
 }
@@ -27,8 +50,7 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
 }
-.col-1 {
-    /* cette valeur est la largeur en % d'une colonne. Si je veux la largeur de 2 colonnes je fais la largeur d'une colonne * 2 */
+/* .col-1 {
     width: 8.333333%;
 }
 .col-2 {
@@ -63,7 +85,7 @@ footer {
 }
 .col-12 {
     width: 100%;   
-}
+} */
 /* les marges à gauche pour créer si on veut des colonnes vides */
 .marge-1 {
     margin-left: 8.333333%;
@@ -74,3 +96,152 @@ footer {
 .marge-3 {
     margin-left: 25%;
 }
+.marge-4 {
+    margin-left: 33.33333%;
+}
+.marge-5 {
+    margin-left: 41.666666%;
+}
+.marge-6 {
+    margin-left: 50%;
+}
+.marge-7 {
+    margin-left: 58.333333%;
+}
+.marge-8 {
+    margin-left: 66.666666%;
+}
+.marge-9 {
+    margin-left: 75%;
+}
+.marge-10 {
+    margin-left: 83.333333%;
+}
+.marge-11 {
+    margin-left: 91.666666%;
+}
+/* les règles médias queries pour le responsive et les différents écrans  */
+/* les téléphones  */
+@media (max-width: 320px) {
+    body {
+        background-color: #fff;
+    }
+    .conteneur {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: lightgoldenrodyellow;
+    }
+    /* pour le footer  */
+    .colonne-xs {
+        display: flex;
+        flex-direction: column;
+    }
+    .col-xs-12 {
+        width: 100%;
+    }
+}
+/* les petites tablettes et les smartphones avec des grands écrans (phablettes)  */
+@media (min-width: 321px) and (max-width: 767px) {
+    body {
+        background: white;
+    }
+    .conteneur {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: lavenderblush;
+    }
+    .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    /* sm = small pour les petits écrans  */
+    .col-sm-12 {
+        width: 100%;
+    }
+    .col-sm-6 {
+        width: 50%;
+    }
+    /* pour le footer  */
+    .colonne-sm {
+        display: flex;
+        flex-direction: column;
+    }
+}
+/* les tablettes et certains ordinateurs portables  */
+@media (min-width: 768px) and (max-width: 1096px) {
+    body {
+        background: white;
+    }
+    .conteneur {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: lavender;
+    }
+}
+/* écrans ordinateurs de bureau  */
+@media (min-width: 1097px) {
+    body {
+        background: white;
+    }
+    .conteneur {
+        width: 1200px;
+        margin: 0 auto;
+        border: 1px solid #000;
+        background-color: thistle;
+    }
+}
+
+/* 
+
+.col-1 {
+    width: 6.333333%;
+    margin: 1%;
+}
+.col-2 {
+    width: 14.6666%;
+    margin: 1%;
+}
+.col-3 {
+    width: 23%;
+    margin: 1%;
+}
+.col-4 {
+    width: 31.333333%;
+    margin: 1%;
+}
+.col-5 {
+    width: 39.6666666%;
+    margin: 1%;
+}
+.col-6 {
+    width: 48%;
+    margin: 1%;
+}
+.col-7 {
+    width: 56.333333%; 
+    margin: 1%;
+}
+.col-8 {
+    width: 64.666666%;
+    margin: 1%; 
+}
+.col-9 {
+    width: 73%;
+    margin: 1%;  
+}
+.col-10 {
+    width: 81.333333%;
+    margin: 1%;  
+}
+.col-11 {
+    width: 89.666666%;
+    margin: 1%;   
+}
+.col-12 {
+    width: 98%;
+    margin: 1%;   
+} */

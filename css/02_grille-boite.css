@@ -1,0 +1,310 @@
+/* font-family: 'Amatic SC', cursive;
+font-family: 'Oswald', sans-serif; */
+
+body {
+    background: linen;
+    clear: both;
+}
+
+#conteneur {
+    width: 1200px;
+    margin: auto;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.centrer {
+    text-align: center;
+}
+
+.bordure {
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    margin: auto;
+    position: sticky;
+    top: 0;
+    background: rgb(252, 236, 220);
+}
+
+h1 {
+    text-transform: uppercase;
+    font-family: 'Amatic SC', cursive;
+    letter-spacing: 10px;
+    font-size: 4em;
+    flex-wrap: wrap;
+}
+
+nav {
+    height: 40px;
+    margin-bottom: 10px;
+    line-height: 20px;
+    text-align: center;
+    margin: auto;
+}
+
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    color: #000;
+}
+
+nav a:hover {
+    font-weight: bolder;
+}
+
+#menu {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+main {
+    width: 80%;
+    margin: 0 auto;
+    font-family: 'Oswald', sans-serif; 
+    letter-spacing: 0.05em;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+footer {
+    background: rgb(252, 236, 220);
+    font-family: 'Oswald', sans-serif;
+}
+
+/* MES IMAGES */
+
+figure .image1 {
+    padding: 10px;
+    /* background-image: url(../img/dolomites.jpg); */
+}
+
+.image2 {
+    /* background-image: url(../img/dolomites01.jpg); */
+    background-position: top;
+    background-size: cover;
+}
+
+.image3 {
+    /* background-image: url(../img/dolomites02.jpg); */
+    background-position: top;
+    background-size: cover;
+}
+
+.image4 {
+    /* background-image: url(../img/dolomites03.jpg); */
+    background-position: top;
+    background-size: cover;
+}
+
+.image5 {
+    /* background-image: url(../img/dolomites04.jpg); */
+    background-position: center;
+    background-size: cover;
+}
+
+.image6 {
+    /* background-image: url(../img/dolomites05.jpg); */
+    background-position: center;
+    background-size: cover;
+}
+
+.image7 {
+    /* background-image: url(../img/dolomites06.jpg); */
+    background-position: top;
+    background-size: cover;
+}
+
+
+/* Mes colonnes */
+
+.col-1 {
+    width: 6.333333%;
+    margin: 1%;
+}
+.col-2 {
+    width: 14.6666%;
+    margin: 1%;
+}
+.col-3 {
+    width: 23%;
+    margin: 1%;
+}
+.col-4 {
+    width: 31.333333%;
+    margin: 1%;
+}
+.col-5 {
+    width: 39.6666666%;
+    margin: 1%;
+}
+.col-6 {
+    width: 48%;
+    margin: 1%;
+}
+.col-7 {
+    width: 56.333333%; 
+    margin: 1%;
+}
+.col-8 {
+    width: 64.666666%;
+    margin: 1%; 
+}
+.col-9 {
+    width: 73%;
+    margin: 1%;  
+}
+.col-10 {
+    width: 81.333333%;
+    margin: 1%;  
+}
+.col-11 {
+    width: 89.666666%;
+    margin: 1%;   
+}
+.col-12 {
+    width: 98%;
+    margin: 1%;   
+}
+
+/* Mes marges */
+
+.marge-1 {
+    margin-left: 8.333333%;
+}
+.marge-2 {
+    margin-left: 16.666666%;
+}
+.marge-3 {
+    margin-left: 25%;
+}
+.marge-4 {
+    margin-left: 33.33333%;
+}
+.marge-5 {
+    margin-left: 41.666666%;
+}
+.marge-6 {
+    margin-left: 50%;
+}
+.marge-7 {
+    margin-left: 58.333333%;
+}
+.marge-8 {
+    margin-left: 66.666666%;
+}
+.marge-9 {
+    margin-left: 75%;
+}
+.marge-10 {
+    margin-left: 83.333333%;
+}
+.marge-11 {
+    margin-left: 91.666666%;
+}
+
+
+/* MEDIA QUERIES */
+
+/* GRANDS ÉCRANS */
+
+@media (min-width: 1097px) {
+    #conteneur {
+        width: 1200px;
+    }
+}
+
+/* ORDINATEURS ET TABLETTES*/
+
+@media (min-width: 768px) and (max-width: 1096px) {
+    
+    #conteneur {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: lavender;
+    }
+}
+
+/* PORTABLES  */
+
+@media (min-width: 321px) and (max-width: 767px) {
+    body {
+        background: white;
+    }
+
+    #conteneur {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: lavenderblush;
+    }
+
+    img {
+        height: 250px;
+        width: 310px;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    /* sm = small pour les petits écrans  */
+    .col-sm-12 {
+        width: 98%;
+        margin: 1%; 
+    }
+
+    .col-sm-6 {
+        width: 48%;
+        margin: 1;
+    }
+    
+    /* pour le footer  */
+    .colonne-sm {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+}
+
+/* PLUS PETITS ÉCRANS */
+
+@media (max-width: 320px) {
+    body {
+        background-color: #fff;
+    }
+    #conteneur {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: lightgoldenrodyellow;
+    }
+    /* pour le footer  */
+    .colonne-xs {
+        display: flex;
+        flex-direction: column;
+    }
+    .col-xs-12 {
+        width: 98%;
+        margin: 1%; 
+    }
+
+}
